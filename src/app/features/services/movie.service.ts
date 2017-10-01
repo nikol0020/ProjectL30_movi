@@ -17,9 +17,9 @@ export class MovieService {
       .map(response => response.json().data);
   }
 
-  likeMovie(item: Object): Observable<any> {
+  likeMovie(item: any): Observable<any> {
     return this.http.post('app/items', item)
-      .map(response => response.json().data);
+      .map(response => response);
   }
 }
 

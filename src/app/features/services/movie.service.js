@@ -21,7 +21,7 @@ var MovieService = (function () {
     };
     MovieService.prototype.likeMovie = function (item) {
         return this.http.post('app/items', item)
-            .map(function (response) { return response.json().data; });
+            .map(function (response) { return response; });
     };
     return MovieService;
 }());

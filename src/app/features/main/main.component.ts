@@ -27,8 +27,10 @@ export class MainComponent implements OnInit {
   }
 
   dislike(item: Object) {
-    item['likes']--;
-    this.likeRender(item);
+    if(item['likes'] > 0) {
+      item['likes']--;
+      this.likeRender(item);
+    }
   }
 
   getItemData() {
@@ -64,10 +66,11 @@ export class MainComponent implements OnInit {
       result => this.itemData = result,
       error => console.log(error.statusText)
     );
-  }
+}
 
-  private likeRender(item: Object) {
+  private likeRender(item: any) {
     this.service.likeMovie(item).subscribe(
-      error => console.log(error.statusText))
+      result => console.log(result.status),
+      error => console.log(error))
   };
 }

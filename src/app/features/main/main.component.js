@@ -31,8 +31,10 @@ var MainComponent = (function () {
         this.likeRender(item);
     };
     MainComponent.prototype.dislike = function (item) {
-        item['likes']--;
-        this.likeRender(item);
+        if (item['likes'] > 0) {
+            item['likes']--;
+            this.likeRender(item);
+        }
     };
     MainComponent.prototype.getItemData = function () {
         return this.itemData;
@@ -60,7 +62,7 @@ var MainComponent = (function () {
         this.service.getItemes().subscribe(function (result) { return _this.itemData = result; }, function (error) { return console.log(error.statusText); });
     };
     MainComponent.prototype.likeRender = function (item) {
-        this.service.likeMovie(item).subscribe(function (error) { return console.log(error.statusText); });
+        this.service.likeMovie(item).subscribe(function (result) { return console.log(result.status); }, function (error) { return console.log(error); });
     };
     ;
     return MainComponent;
