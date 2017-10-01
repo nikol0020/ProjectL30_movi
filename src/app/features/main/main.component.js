@@ -9,11 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var http_1 = require("@angular/http");
 var movie_service_1 = require("../services/movie.service");
 var MainComponent = (function () {
-    function MainComponent(http, service) {
-        this.http = http;
+    function MainComponent(service) {
         this.service = service;
         this.stars = 0;
         this.title = '';
@@ -74,7 +72,7 @@ MainComponent = __decorate([
         styleUrls: ['app/features/main/main.component.css'],
         providers: [movie_service_1.MovieService]
     }),
-    __metadata("design:paramtypes", [http_1.Http, movie_service_1.MovieService])
+    __metadata("design:paramtypes", [movie_service_1.MovieService])
 ], MainComponent);
 exports.MainComponent = MainComponent;
 //# sourceMappingURL=main.component.js.map

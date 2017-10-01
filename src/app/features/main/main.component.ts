@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Http} from '@angular/http';
 import {MovieService} from '../services/movie.service'
 
 @Component({
@@ -58,7 +57,7 @@ export class MainComponent implements OnInit {
     this.widthMainContent = '50%';
   }
 
-  constructor(private http: Http, private service: MovieService) {
+  constructor(private service: MovieService) {
   }
 
   ngOnInit() {
