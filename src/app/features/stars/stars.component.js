@@ -6,22 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var common_1 = require("@angular/common");
-var forms_1 = require("@angular/forms");
-var http_1 = require("@angular/http");
-var InMemoryServerModule = (function () {
-    function InMemoryServerModule() {
+var StarsComponent = (function () {
+    function StarsComponent() {
     }
-    return InMemoryServerModule;
+    return StarsComponent;
 }());
-InMemoryServerModule = __decorate([
-    core_1.NgModule({
-        imports: [
-            common_1.CommonModule,
-            http_1.HttpModule,
-            forms_1.FormsModule
-        ],
+StarsComponent = __decorate([
+    core_1.Component({
+        selector: 'stars',
+        templateUrl: 'stars.component.html',
+        styleUrls: ['stars.component.css']
     })
-], InMemoryServerModule);
-exports.InMemoryServerModule = InMemoryServerModule;
-//# sourceMappingURL=sample.module.js.map
+], StarsComponent);
+exports.StarsComponent = StarsComponent;
+//# sourceMappingURL=stars.component.js.map
