@@ -1,4 +1,4 @@
-<form class="form-wrapper">
-	<input type="text" placeholder="Search by name" required>
-	<button type="submit"></button>
+<form class="form-wrapper" #f="ngForm" (ngSubmit)="onSearch(f)">
+  <input type="text" name="title" [ngModel]="newSearchTitle" placeholder="Search by name" required>
+  <button type="submit"></button>
 </form>

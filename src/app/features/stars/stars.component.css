@@ -1,0 +1,46 @@
+.stars {
+  border-top: 1px solid black;
+}
+
+#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+  /*  background: url(images/star.png) no-repeat;*/
+  background: #0f0;
+}
+
+#reviewStars-input {
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin-left: 30px;
+}
+
+#reviewStars-input input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  width: 26px;
+  height: 29px;
+
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+#reviewStars-input input:checked ~ label {
+  background-position: 0 -25px;
+  height: 26px;
+  width: 29px;
+}
+
+#reviewStars-input label {
+  background-position: 0 0;
+  height: 26px;
+  width: 29px;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+#reviewStars-input label:hover {
+  background-position: 0 -25px;
+}

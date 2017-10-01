@@ -112,8 +112,8 @@ var ItemData = (function () {
                 "id": 8,
                 "title": "The Lord of the Rings: The Return of the King",
                 "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BYWY1ZWQ5YjMtMDE0MS00NWIzLWE1M2YtODYzYTk2OTNlYWZmXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SY500_SX334_AL_.jpg",
-                "stars": 4,
-                "likes": 15,
+                "stars": 5,
+                "likes": 16,
                 "genres": ["Adventure", "Drama", "Fantasy"],
                 "actors": [
                     "Elijah Wood",

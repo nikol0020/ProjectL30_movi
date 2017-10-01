@@ -10,9 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
+var movie_service_1 = require("../services/movie.service");
 var MainComponent = (function () {
-    function MainComponent(http) {
+    function MainComponent(http, service) {
         this.http = http;
+        this.service = service;
+        this.stars = 0;
         this.title = '';
         this.likes = 0;
         this.posterUrl = '';
@@ -20,55 +23,56 @@ var MainComponent = (function () {
         this.actors = '';
         this.genres = '';
         this.description = '';
-        this.toggoleShowHide = "hidden";
-        this.widthMainContent = "100%";
+        this.toggoleShowHide = 'hidden';
+        this.widthMainContent = '100%';
     }
     MainComponent.prototype.like = function (item) {
-        var _this = this;
-        item["likes"] = item["likes"] + 1;
-        this.http.put("app/items", item).subscribe(function (result) {
-            var json = result.json();
-            if (json)
-                _this.itemArray.push(json.data);
-        }, function (error) { return console.log(error.statusText); });
+        item['likes']++;
+        this.likeRender(item);
     };
     MainComponent.prototype.dislike = function (item) {
-        var _this = this;
-        item["likes"] = item["likes"] - 1;
-        this.http.put("app/items", item).subscribe(function (result) {
-            var json = result.json();
-            if (json)
-                _this.itemArray.push(json.data);
-        }, function (error) { return console.log(error.statusText); });
+        item['likes']--;
+        this.likeRender(item);
+    };
+    MainComponent.prototype.getItemData = function () {
+        return this.itemData;
+    };
+    MainComponent.prototype.setItemData = function (itemData) {
+        return this.itemData = itemData;
     };
     MainComponent.prototype.close = function () {
-        this.toggoleShowHide = "hidden";
-        this.widthMainContent = "100%";
+        this.toggoleShowHide = 'hidden';
+        this.widthMainContent = '100%';
     };
     MainComponent.prototype.render = function (details) {
-        this.title = details["title"];
-        this.likes = details["likes"];
-        this.posterUrl = details["posterUrl"];
-        this.director = details["director"];
-        this.actors = details["actors"];
-        this.genres = details["genres"];
-        this.description = details["description"];
-        this.toggoleShowHide = "visible";
-        this.widthMainContent = "50%";
+        this.title = details['title'];
+        this.likes = details['likes'];
+        this.posterUrl = details['posterUrl'];
+        this.director = details['director'];
+        this.actors = details['actors'];
+        this.genres = details['genres'];
+        this.description = details['description'];
+        this.toggoleShowHide = 'visible';
+        this.widthMainContent = '50%';
     };
     MainComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.http.get("app/items").subscribe(function (result) { return _this.itemArray = result.json().data; }, function (error) { return console.log(error.statusText); });
+        this.service.getItemes().subscribe(function (result) { return _this.itemData = result; }, function (error) { return console.log(error.statusText); });
     };
+    MainComponent.prototype.likeRender = function (item) {
+        this.service.likeMovie(item).subscribe(function (error) { return console.log(error.statusText); });
+    };
+    ;
     return MainComponent;
 }());
 MainComponent = __decorate([
     core_1.Component({
-        selector: "main",
-        templateUrl: "app/features/main/main.component.html",
-        styleUrls: ["app/features/main/main.component.css"]
+        selector: 'main',
+        templateUrl: 'app/features/main/main.component.html',
+        styleUrls: ['app/features/main/main.component.css'],
+        providers: [movie_service_1.MovieService]
     }),
-    __metadata("design:paramtypes", [http_1.Http])
+    __metadata("design:paramtypes", [http_1.Http, movie_service_1.MovieService])
 ], MainComponent);
 exports.MainComponent = MainComponent;
 //# sourceMappingURL=main.component.js.map

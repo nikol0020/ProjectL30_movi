@@ -14,9 +14,9 @@ var HeaderComponent = (function () {
 }());
 HeaderComponent = __decorate([
     core_1.Component({
-        selector: "header",
-        templateUrl: "app/features/header/header.component.html",
-        styleUrls: ["app/features/header/header.component.css"]
+        selector: 'header',
+        templateUrl: 'app/features/header/header.component.html',
+        styleUrls: ['app/features/header/header.component.css']
     })
 ], HeaderComponent);
 exports.HeaderComponent = HeaderComponent;

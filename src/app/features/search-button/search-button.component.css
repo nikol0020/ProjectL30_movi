@@ -1,5 +1,5 @@
 * {
-    font: 24px Arial;   
+    font: 24px Arial;
 }
 
 .form-wrapper {
@@ -7,22 +7,22 @@
     margin-top: 10px;
     height: 50px;
 }
- 
+
 .form-wrapper input {
     width: 250px;
     height: 20px;
     padding: 10px 5px;
-    float: right;    
+    float: right;
     border: 0;
     background: #eee;
 }
- 
+
 .form-wrapper input:focus {
     outline: 0;
     background: #fff;
     box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
 }
- 
+
 .form-wrapper button {
     overflow: visible;
     position: relative;
@@ -33,8 +33,7 @@
     height: 40px;
     width: 40px;
     color: #fff;
-    text-transform: uppercase;
-    background: url(app/features/search-button/images/search.png) #8a8787 12px no-repeat;        
-}   
-   
-   
+    background: url(app/features/search-button/images/search.png) #777 12px no-repeat;
+}
+
+
