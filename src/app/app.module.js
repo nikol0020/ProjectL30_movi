@@ -15,6 +15,7 @@ var footer_component_1 = require("./features/footer/footer.component");
 var main_component_1 = require("./features/main/main.component");
 var sort_buttons_component_1 = require("./features/sort-buttons/sort-buttons.component");
 var search_button_component_1 = require("./features/search-button/search-button.component");
+var stars_component_1 = require("./features/stars/stars.component");
 var angular_in_memory_web_api_1 = require("angular-in-memory-web-api");
 var inMemoryServer_1 = require("./inMemServer/inMemoryServer");
 var AppModule = (function () {
@@ -26,7 +27,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, http_1.HttpModule, angular_in_memory_web_api_1.InMemoryWebApiModule.forRoot(inMemoryServer_1.ItemData), forms_1.FormsModule],
         declarations: [app_component_1.AppComponent, header_component_1.HeaderComponent, footer_component_1.FooterComponent, main_component_1.MainComponent,
-            sort_buttons_component_1.SortButtonsComponent, search_button_component_1.SearchButtonComponent],
+            sort_buttons_component_1.SortButtonsComponent, search_button_component_1.SearchButtonComponent, stars_component_1.StarsComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

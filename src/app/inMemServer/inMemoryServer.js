@@ -38,7 +38,7 @@ var ItemData = (function () {
                 "title": "The Godfather: Part II",
                 "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BMjZiNzIxNTQtNDc5Zi00YWY1LThkMTctMDgzYjY4YjI1YmQyL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY500_CR0,0,351,500_AL_.jpg",
                 "stars": 4,
-                "likes": 15,
+                "likes": 17,
                 "genres": ["Crime", "Drama"],
                 "actors": [
                     "Al Pacino",
@@ -68,7 +68,7 @@ var ItemData = (function () {
                 "title": "12 Angry Men",
                 "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BODQwOTc5MDM2N15BMl5BanBnXkFtZTcwODQxNTEzNA@@._V1_SY500_CR0,0,333,500_AL_.jpg",
                 "stars": 4,
-                "likes": 15,
+                "likes": 13,
                 "genres": ["Drama"],
                 "actors": [
                     "Henry Fonda",
@@ -82,8 +82,8 @@ var ItemData = (function () {
                 "id": 6,
                 "title": "Schindler's List",
                 "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY500_CR0,0,333,500_AL_.jpg",
-                "stars": 4,
-                "likes": 15,
+                "stars": 5,
+                "likes": 19,
                 "genres": ["Drama"],
                 "actors": [
                     "Liam Neeson",
@@ -97,8 +97,8 @@ var ItemData = (function () {
                 "id": 7,
                 "title": "Pulp Fiction",
                 "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BMTkxMTA5OTAzMl5BMl5BanBnXkFtZTgwNjA5MDc3NjE@._V1_SY500_CR0,0,336,500_AL_.jpg",
-                "stars": 4,
-                "likes": 15,
+                "stars": 3,
+                "likes": 18,
                 "genres": ["Crime", "Drama"],
                 "actors": [
                     "John Travolta",
@@ -113,7 +113,7 @@ var ItemData = (function () {
                 "title": "The Lord of the Rings: The Return of the King",
                 "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BYWY1ZWQ5YjMtMDE0MS00NWIzLWE1M2YtODYzYTk2OTNlYWZmXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SY500_SX334_AL_.jpg",
                 "stars": 5,
-                "likes": 16,
+                "likes": 23,
                 "genres": ["Adventure", "Drama", "Fantasy"],
                 "actors": [
                     "Elijah Wood",
@@ -128,7 +128,7 @@ var ItemData = (function () {
                 "title": "Il buono, il brutto, il cattivo",
                 "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_SY500_CR0,0,328,500_AL_.jpg",
                 "stars": 4,
-                "likes": 15,
+                "likes": 12,
                 "genres": ["Adventure"],
                 "actors": [
                     "Clint Eastwood",
@@ -142,8 +142,8 @@ var ItemData = (function () {
                 "id": 10,
                 "title": "Fight Club",
                 "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BZGY5Y2RjMmItNDg5Yy00NjUwLThjMTEtNDc2OGUzNTBiYmM1XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX290_CR0,0,290,429_AL_.jpg",
-                "stars": 4,
-                "likes": 15,
+                "stars": 2,
+                "likes": 8,
                 "genres": ["Drama"],
                 "actors": [
                     "Brad Pitt",
@@ -172,8 +172,8 @@ var ItemData = (function () {
                 "id": 12,
                 "title": "Star Wars: Episode V - The Empire Strikes Back",
                 "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BYmViY2M2MTYtY2MzOS00YjQ1LWIzYmEtOTBiNjhlMGM0NjZjXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SY500_CR0,0,322,500_AL_.jpg",
-                "stars": 4,
-                "likes": 15,
+                "stars": 5,
+                "likes": 20,
                 "genres": ["Adventure"],
                 "actors": [
                     "Mark Hamill",
@@ -188,7 +188,7 @@ var ItemData = (function () {
                 "title": "Forrest Gump",
                 "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BYThjM2MwZGMtMzg3Ny00NGRkLWE4M2EtYTBiNWMzOTY0YTI4XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SY500_CR0,0,378,500_AL_.jpg",
                 "stars": 4,
-                "likes": 15,
+                "likes": 5,
                 "genres": ["Drama"],
                 "actors": [
                     "Tom Hanks",

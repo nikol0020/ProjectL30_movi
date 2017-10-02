@@ -18,19 +18,33 @@ var SortButtonsComponent = (function () {
         this.name = 'Sort Movies';
         this.nameByLike = 'by likes';
         this.nameByRating = 'by rating';
+        this.flagLikes = false;
+        this.flagRating = false;
     }
     SortButtonsComponent.prototype.likes = function () {
         var _this = this;
         this.service.getItemes().subscribe(function (result) {
-            _this.itemData = result.sort(function (a, b) { return b['likes'] - a['likes']; });
+            if (!_this.flagLikes) {
+                _this.itemData = result.sort(function (a, b) { return b['likes'] - a['likes']; });
+            }
+            else {
+                _this.itemData = result.sort(function (a, b) { return a['likes'] - b['likes']; });
+            }
             _this.main.setItemData(_this.itemData);
+            _this.flagLikes = !_this.flagLikes;
         }, function (error) { return console.log(error.statusText); });
     };
     SortButtonsComponent.prototype.rating = function () {
         var _this = this;
         this.service.getItemes().subscribe(function (result) {
-            _this.itemData = result.sort(function (a, b) { return b['stars'] - a['stars']; });
+            if (!_this.flagRating) {
+                _this.itemData = result.sort(function (a, b) { return b['stars'] - a['stars']; });
+            }
+            else {
+                _this.itemData = result.sort(function (a, b) { return a['stars'] - b['stars']; });
+            }
             _this.main.setItemData(_this.itemData);
+            _this.flagRating = !_this.flagRating;
         }, function (error) { return console.log(error.statusText); });
     };
     return SortButtonsComponent;

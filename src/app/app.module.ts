@@ -9,6 +9,7 @@ import {FooterComponent}  from './features/footer/footer.component';
 import {MainComponent}  from './features/main/main.component';
 import {SortButtonsComponent}  from './features/sort-buttons/sort-buttons.component';
 import {SearchButtonComponent}  from './features/search-button/search-button.component';
+import {StarsComponent}  from './features/stars/stars.component';
 
 import {InMemoryWebApiModule} from "angular-in-memory-web-api";
 import {ItemData} from "./inMemServer/inMemoryServer";
@@ -16,7 +17,7 @@ import {ItemData} from "./inMemServer/inMemoryServer";
 @NgModule({
   imports: [BrowserModule, HttpModule, InMemoryWebApiModule.forRoot(ItemData), FormsModule],
   declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent,
-    SortButtonsComponent, SearchButtonComponent],
+    SortButtonsComponent, SearchButtonComponent, StarsComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
