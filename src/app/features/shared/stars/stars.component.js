@@ -14,8 +14,8 @@ var StarsComponent = (function () {
 StarsComponent = __decorate([
     core_1.Component({
         selector: 'stars',
-        templateUrl: 'app/features/stars/stars.component.html',
-        styleUrls: ['app/features/stars/stars.component.css']
+        templateUrl: 'app/features/shared/stars/stars.component.html',
+        styleUrls: ['app/features/shared/stars/stars.component.css']
     })
 ], StarsComponent);
 exports.StarsComponent = StarsComponent;

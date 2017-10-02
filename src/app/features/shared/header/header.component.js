@@ -6,18 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var FooterComponent = (function () {
-    function FooterComponent() {
-        this.name = 'Copyright FE17_angular';
+var HeaderComponent = (function () {
+    function HeaderComponent() {
+        this.name = 'Movies';
     }
-    return FooterComponent;
+    return HeaderComponent;
 }());
-FooterComponent = __decorate([
+HeaderComponent = __decorate([
     core_1.Component({
-        selector: "footer",
-        templateUrl: "app/features/footer/footer.component.html",
-        styleUrls: ["app/features/footer/footer.component.css"]
+        selector: 'header',
+        templateUrl: 'app/features/shared/header/header.component.html',
+        styleUrls: ['app/features/shared/header/header.component.css']
     })
-], FooterComponent);
-exports.FooterComponent = FooterComponent;
-//# sourceMappingURL=footer.component.js.map
+], HeaderComponent);
+exports.HeaderComponent = HeaderComponent;
+//# sourceMappingURL=header.component.js.map

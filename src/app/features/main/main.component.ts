@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MovieService} from '../services/movie.service';
-import {StarsComponent} from '../stars/stars.component';
+import {StarsComponent} from '../shared/stars/stars.component';
 
 @Component({
   selector: 'main',

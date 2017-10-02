@@ -28,9 +28,9 @@ var SearchButtonComponent = (function () {
 }());
 SearchButtonComponent = __decorate([
     core_1.Component({
-        selector: "search-button",
-        templateUrl: "app/features/search-button/search-button.component.html",
-        styleUrls: ["app/features/search-button/search-button.component.css"]
+        selector: 'search-button',
+        templateUrl: 'app/features/search-button/search-button.component.html',
+        styleUrls: ['app/features/search-button/search-button.component.css']
     }),
     __metadata("design:paramtypes", [movie_service_1.MovieService, main_component_1.MainComponent])
 ], SearchButtonComponent);

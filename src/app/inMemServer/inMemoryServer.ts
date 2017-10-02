@@ -8,7 +8,7 @@ export class ItemData implements InMemoryDbService {
         "title": "The Shawshank Redemption",
         "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY500_CR0,0,336,500_AL_.jpg",
         "stars": 5,
-        "likes": 22,
+        "likes": 18,
         "genres": ["Crime", "Drama"],
         "actors": [
           "Tim Robbins",
@@ -83,7 +83,7 @@ export class ItemData implements InMemoryDbService {
           "title": "Schindler's List",
           "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY500_CR0,0,333,500_AL_.jpg",
           "stars": 5,
-          "likes": 19,
+          "likes": 17,
           "genres": ["Drama"],
           "actors": [
             "Liam Neeson",
@@ -128,7 +128,7 @@ export class ItemData implements InMemoryDbService {
           "title": "Il buono, il brutto, il cattivo",
           "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_SY500_CR0,0,328,500_AL_.jpg",
           "stars": 4,
-          "likes": 12,
+          "likes": 20,
           "genres": ["Adventure"],
           "actors": [
             "Clint Eastwood",
@@ -158,7 +158,7 @@ export class ItemData implements InMemoryDbService {
           "title": "The Lord of the Rings: The Fellowship of the Ring",
           "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BNmFmZDdkODMtNzUyMy00NzhhLWFjZmEtMGMzYjNhMDA1NTBkXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SY500_SX342_AL_.jpg",
           "stars": 4,
-          "likes": 15,
+          "likes": 20,
           "genres": ["Adventure", "Drama", "Fantasy"],
           "actors": [
             "Elijah Wood",
@@ -173,7 +173,7 @@ export class ItemData implements InMemoryDbService {
           "title": "Star Wars: Episode V - The Empire Strikes Back",
           "posterUrl": "https:\/\/images-na.ssl-images-amazon.com\/images\/M\/MV5BYmViY2M2MTYtY2MzOS00YjQ1LWIzYmEtOTBiNjhlMGM0NjZjXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SY500_CR0,0,322,500_AL_.jpg",
           "stars": 5,
-          "likes": 20,
+          "likes": 15,
           "genres": ["Adventure"],
           "actors": [
             "Mark Hamill",
