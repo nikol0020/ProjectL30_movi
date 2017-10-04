@@ -1,0 +1,17 @@
+<ul class="wrapper">
+  <li *ngFor="let item of itemData">
+    <div class="sidebar-item">
+      <button class="like" (click)="like(item)"></button>
+      <button class="dislike" (click)="dislike(item)"></button>
+      <div class="side-item__likes">likes</div>
+      <div>{{ item.likes }}</div>
+    </div>
+    <div class="description-item" (click)="render(item)">
+      <div class="title">{{ item.title }}</div>
+      <div class="clearfix"></div>
+      <div class="poster"><img src="{{ item.posterUrl }}" alt="poster"></div>
+    </div>
+    <!-- <stars [stars]="item.stars" (change)="onStarsChange($event)"></stars>-->
+    <stars [stars]="item.stars" (click)="starView(item)"></stars>
+  </li>
+</ul>

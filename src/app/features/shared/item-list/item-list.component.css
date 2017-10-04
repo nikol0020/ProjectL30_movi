@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sidebar-item {
+  width: 20%;
+  float: left;
+}
+.side-item__likes {
+  font-size: 12px;
+  border-bottom: 1px solid black;
+}
+.title{
+  text-align: center;
+  padding-top: 15%;
+}
+.like {
+  background: url(app/features/main/images/like.png) 3px no-repeat;
+}
+.poster {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+img {
+  width: 150px;
+}
+.dislike {
+  background: url(app/features/main/images/dislike.png) 3px no-repeat;
+}
+.description-item {
+  margin-left: 20%;
+  border-left: 1px solid black;
+  padding: 0 3px;
+  height: 330px;
+  position: relative;
+}
